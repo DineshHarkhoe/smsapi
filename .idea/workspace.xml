@@ -89,7 +89,7 @@
       <recent name="com.dinesh.smsapi.entities" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.30">
+  <component name="RunManager" selected="Spring Boot.SmsapiApplication">
     <configuration name="com.dinesh.smsapi.repositories in smsapi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="smsapi" />
       <extension name="coverage">
