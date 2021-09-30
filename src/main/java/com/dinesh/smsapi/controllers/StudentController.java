@@ -34,12 +34,14 @@ public class StudentController {
     @PutMapping("/student/{id}")
     Optional<Student> editStudentName(@RequestBody Student newStudent, @PathVariable Long id) {
         return studentRepository.findById(id).map(student -> {
+            student.setStudy(newStudent.getStudy());
+            student.setOrientatie(newStudent.getOrientatie());
+            student.setGeslacht(newStudent.getGeslacht());
             student.setAdres(newStudent.getAdres());
             student.setCohort(newStudent.getCohort());
-            student.setGeslacht(newStudent.getGeslacht());
-            student.setOrientatie(newStudent.getOrientatie());
-            student.setPerson(newStudent.getPerson());
-            student.setStudy(newStudent.getStudy());
+            student.setStatus(newStudent.getStatus());
+            student.setStudent_name(newStudent.getStudent_name());
+            student.setStudent_surname(newStudent.getStudent_surname());
             return studentRepository.save(student);
         });
     }

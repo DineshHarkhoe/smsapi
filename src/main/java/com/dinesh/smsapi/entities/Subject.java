@@ -16,8 +16,8 @@ public class Subject {
     private Study study;
 
     @ManyToOne
-    @JoinColumn(name = "staff_id")
-    private Staff staff;
+    @JoinColumn(name = "wetenschapper_id")
+    private Wetenschapper wetenschapper;
 
     @OneToMany(mappedBy = "subject")
     private Set<Grade> gradeSet;
@@ -57,12 +57,12 @@ public class Subject {
         this.study = study;
     }
 
-    public Staff getStaff() {
-        return staff;
+    public Wetenschapper getWetenschapper() {
+        return wetenschapper;
     }
 
-    public void setStaff(Staff staff) {
-        this.staff = staff;
+    public void setWetenschapper(Wetenschapper wetenschapper) {
+        this.wetenschapper = wetenschapper;
     }
 
     @Override

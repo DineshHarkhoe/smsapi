@@ -33,7 +33,7 @@ public class OrientatieController {
     @PutMapping("/orientatie/{id}")
     Optional<Orientatie> editOrientatieName(@RequestBody Orientatie newOrientatie, @PathVariable Long id) {
         return orientatieRepository.findById(id).map(orientatie -> {
-            orientatie.setOrientatie_keuze(newOrientatie.getOrientatie_keuze());
+            orientatie.setOrientatie(newOrientatie.getOrientatie());
             orientatie.setStudy(newOrientatie.getStudy());
             return orientatieRepository.save(orientatie);
         });

@@ -7,40 +7,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38f26d29-0c3c-4680-92a2-8fc7cf7d5041" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/SmsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/controllers/AdministratieController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/controllers/Faculty_bestuurController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/controllers/StudcieController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/entities/Administratie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/entities/Faculty_bestuur.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/entities/Studcie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/forms/PersonForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/repositories/AdministratieRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/repositories/Faculty_bestuurRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/repositories/StudcieRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/controllers/GradebookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/controllers/GradeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/controllers/PersonController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/controllers/StaffController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/controllers/WetenschapperController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/entities/Faculty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/entities/Faculty.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/entities/Gradebook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/entities/Grade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/entities/Orientatie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/entities/Orientatie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/entities/Person.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/entities/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/entities/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/entities/Staff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/entities/Wetenschapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/entities/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/entities/Status.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/controllers/OrientatieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/controllers/OrientatieController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/controllers/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/controllers/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/controllers/StudyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/controllers/StudyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/controllers/SubjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/controllers/SubjectController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/controllers/WetenschapperController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/controllers/WetenschapperController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/entities/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/entities/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/entities/Study.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/entities/Study.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/entities/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/entities/Subject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/entities/SubjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/controllers/SubjectController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/forms/PersonForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/forms/PersonForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/forms/StudentForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/forms/StudentForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/repositories/GradebookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/repositories/GradeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/repositories/PersonRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/repositories/StaffRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/repositories/WetenschapperRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/repositories/WetenschapperRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/repositories/WetenschapperRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/views/HomeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/views/HomeView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/entities/SubjectController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.generated.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.generated.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/controllers/FacultyController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/controllers/GradebookController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/controllers/OrientatieController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/controllers/PersonController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/controllers/RoleController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/controllers/StaffController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/controllers/StatusController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/controllers/StudentController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/controllers/StudyController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/entities/Faculty.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/entities/Faculty.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/entities/Gradebook.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/entities/Orientatie.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/entities/Orientatie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/entities/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/entities/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/entities/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/entities/Staff.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/entities/Status.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/entities/Status.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/entities/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/entities/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/entities/Study.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/entities/Study.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/entities/Subject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/entities/Subject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/repositories/GradebookRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/repositories/PersonRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/repositories/StaffRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/repositories/SubjectRepository.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -269,7 +271,7 @@
       <workItem from="1632707651616" duration="1012000" />
       <workItem from="1632775525422" duration="18839000" />
       <workItem from="1632882187896" duration="4092000" />
-      <workItem from="1633029759969" duration="4718000" />
+      <workItem from="1633029759969" duration="6508000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1632607092186</created>
@@ -299,7 +301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632781026478</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="updated db">
+      <created>1633034678064</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1633034678064</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,7 +343,8 @@
     <MESSAGE value="finished entities" />
     <MESSAGE value="runmanager changed" />
     <MESSAGE value="init view and form" />
-    <option name="LAST_COMMIT_MESSAGE" value="init view and form" />
+    <MESSAGE value="updated db" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated db" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -342,10 +352,11 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="283" y="46" key="#Assign_Data_Sources/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1632626145190" />
-    <state x="283" y="46" key="#Deployment" timestamp="1632662954956">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state x="1616" y="68" key="#Deployment" timestamp="1633034646150">
+      <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state x="283" y="46" key="#Deployment/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1632662954956" />
+    <state x="1616" y="68" key="#Deployment/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1633034646150" />
     <state x="185" y="71" key="#Project_Structure" timestamp="1632678689267">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -354,11 +365,11 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="147" y="42" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1632679880506" />
-    <state x="2134" y="78" width="374" height="625" key="#com.intellij.ide.util.MemberChooser" timestamp="1633034422479">
+    <state x="2134" y="78" width="374" height="625" key="#com.intellij.ide.util.MemberChooser" timestamp="1633036097892">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state x="496" y="88" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1632662082158" />
-    <state x="2134" y="78" width="374" height="625" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1633034422479" />
+    <state x="2134" y="78" width="374" height="625" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1633036097892" />
     <state x="496" y="88" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1632791305523" />
     <state x="992" y="88" key="#com.intellij.ide.util.MemberChooser/0.0.2732.768@0.0.2732.768" timestamp="1632778830262" />
     <state x="421" y="168" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1632789810635">
@@ -383,11 +394,11 @@
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state x="1787" y="134" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1633031157972" />
-    <state x="299" y="0" width="768" height="767" key="CommitChangelistDialog2" timestamp="1632781024960">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state x="1665" y="0" width="768" height="767" key="CommitChangelistDialog2" timestamp="1633034676435">
+      <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state x="299" y="0" key="CommitChangelistDialog2/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1632662979421" />
-    <state x="1665" y="0" key="CommitChangelistDialog2/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1632607091950" />
+    <state x="1665" y="0" key="CommitChangelistDialog2/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1633034676435" />
     <state x="299" y="0" width="768" height="767" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1632781024960" />
     <state x="1466" y="100" width="1166" height="568" key="DiffContextDialog" timestamp="1632607552981">
       <screen x="1366" y="0" width="1366" height="768" />

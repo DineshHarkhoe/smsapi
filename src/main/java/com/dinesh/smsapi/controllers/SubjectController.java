@@ -34,9 +34,9 @@ public class SubjectController {
     Optional<Subject> editSubjectName(@RequestBody Subject newSubject, @PathVariable Long id) {
         return subjectRepository.findById(id).map(subject -> {
             subject.setSemester(newSubject.getSemester());
-            subject.setStaff(newSubject.getStaff());
             subject.setStudy(newSubject.getStudy());
             subject.setSubject_name(newSubject.getSubject_name());
+            subject.setWetenschapper(newSubject.getWetenschapper());
             return subjectRepository.save(subject);
         });
     }

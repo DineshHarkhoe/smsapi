@@ -1,6 +1,6 @@
 package com.dinesh.smsapi.controllers;
 
-import com.dinesh.smsapi.entities.Staff;
+import com.dinesh.smsapi.entities.Wetenschapper;
 import com.dinesh.smsapi.repositories.WetenschapperRepository;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,32 +15,34 @@ public class WetenschapperController {
         this.wetenschapperRepository = wetenschapperRepository;
     }
 
-    @GetMapping("/staff")
-    List<Staff> all() {
+    @GetMapping("/wetenschapper")
+    List<Wetenschapper> all() {
         return wetenschapperRepository.findAll();
     }
 
-    @GetMapping("/staff/{id}")
-    Optional<Staff> all(@PathVariable Long id) {
+    @GetMapping("/wetenschapper/{id}")
+    Optional<Wetenschapper> all(@PathVariable Long id) {
         return wetenschapperRepository.findById(id);
     }
 
-    @PostMapping("/staff")
-    Staff newStaff(@RequestBody Staff staff) {
-        return wetenschapperRepository.save(staff);
+    @PostMapping("/wetenschapper")
+    Wetenschapper newWetenschapper(@RequestBody Wetenschapper wetenschapper) {
+        return wetenschapperRepository.save(wetenschapper);
     }
 
-    @PutMapping("/staff/{id}")
-    Optional<Staff> editStaffName(@RequestBody Staff newStaff, @PathVariable Long id) {
-        return wetenschapperRepository.findById(id).map(staff -> {
-            staff.setPerson(newStaff.getPerson());
-            staff.setStudy(newStaff.getStudy());
-            return wetenschapperRepository.save(staff);
+    @PutMapping("/wetenschapper/{id}")
+    Optional<Wetenschapper> editWetenschapperName(@RequestBody Wetenschapper newWetenschapper, @PathVariable Long id) {
+        return wetenschapperRepository.findById(id).map(wetenschapper -> {
+            wetenschapper.setStatus(newWetenschapper.getStatus());
+            wetenschapper.setStudy(newWetenschapper.getStudy());
+            wetenschapper.setWetenschapper_naam(newWetenschapper.getWetenschapper_naam());
+            wetenschapper.setWetenschapper_surname(newWetenschapper.getWetenschapper_surname());
+            return wetenschapperRepository.save(wetenschapper);
         });
     }
 
-    @DeleteMapping("/staff/{id}")
-    void deleteStaff(@PathVariable Long id) {
+    @DeleteMapping("/wetenschapper/{id}")
+    void deleteWetenschapper(@PathVariable Long id) {
         wetenschapperRepository.deleteById(id);
     }
 }

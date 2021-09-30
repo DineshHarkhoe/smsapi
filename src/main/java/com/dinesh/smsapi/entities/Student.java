@@ -35,6 +35,14 @@ public class Student {
     public Student() {
     }
 
+    public Long getStudent_id() {
+        return student_id;
+    }
+
+    public void setStudent_id(Long student_id) {
+        this.student_id = student_id;
+    }
+
     public String getStudent_name() {
         return student_name;
     }
@@ -49,22 +57,6 @@ public class Student {
 
     public void setStudent_surname(String student_surname) {
         this.student_surname = student_surname;
-    }
-
-    public Status getStatus() {
-        return status;
-    }
-
-    public void setStatus(Status status) {
-        this.status = status;
-    }
-
-    public Long getStudent_id() {
-        return student_id;
-    }
-
-    public void setStudent_id(Long student_id) {
-        this.student_id = student_id;
     }
 
     public Integer getCohort() {
@@ -107,13 +99,11 @@ public class Student {
         this.study = study;
     }
 
-    @Override
-    public boolean equals(Object obj) {
-        return super.equals(obj);
+    public Status getStatus() {
+        return status;
     }
 
-    @Override
-    public String toString() {
-        return super.toString();
+    public void setStatus(Status status) {
+        this.status = status;
     }
 }

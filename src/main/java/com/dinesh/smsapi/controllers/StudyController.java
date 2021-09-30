@@ -33,8 +33,8 @@ public class StudyController {
     @PutMapping("/study/{id}")
     Optional<Study> editStudyName(@RequestBody Study newStudy, @PathVariable Long id) {
         return studyRepository.findById(id).map(study -> {
-            study.setStudy_name(newStudy.getStudy_name());
             study.setFaculty(newStudy.getFaculty());
+            study.setStudy(newStudy.getStudy());
             return studyRepository.save(study);
         });
     }
