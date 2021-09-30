@@ -12,8 +12,11 @@ public class Role {
 
     private String role;
 
-    @OneToMany(mappedBy = "role")
-    private Set<Person> personSet;
+    @OneToMany(mappedBy = "studcie")
+    private Set<Studcie> studcieSet;
+
+    @OneToMany(mappedBy = "faculty_bestuur")
+    private Set<Faculty_bestuur> faculty_bestuurSet;
 
     public Role() {
     }

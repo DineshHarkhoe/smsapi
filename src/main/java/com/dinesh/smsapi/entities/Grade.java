@@ -6,32 +6,44 @@ import javax.persistence.*;
 import java.time.LocalDate;
 
 @Entity
-public class Gradebook {
+public class Grade {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long gradebook_id;
+    private Long grade_id;
 
     @ManyToOne
     @JoinColumn(name = "subject_id")
-    Subject subject;
+    private Subject subject;
 
     @ManyToOne
     @JoinColumn(name = "student_id")
-    Student student;
+    private Student student;
+
+    @ManyToOne
+    @JoinColumn(name = "wetenschapper_id")
+    private Wetenschapper examinator;
 
     @JsonFormat(pattern = "yyyy-MM-dd")
-    private LocalDate date;
+    private LocalDate exam_date;
     private Float grade;
 
-    public Gradebook() {
+    public Grade() {
     }
 
-    public Long getGradebook_id() {
-        return gradebook_id;
+    public Wetenschapper getExaminator() {
+        return examinator;
     }
 
-    public void setGradebook_id(Long gradebook_id) {
-        this.gradebook_id = gradebook_id;
+    public void setExaminator(Wetenschapper examinator) {
+        this.examinator = examinator;
+    }
+
+    public Long getGrade_id() {
+        return grade_id;
+    }
+
+    public void setGrade_id(Long grade_id) {
+        this.grade_id = grade_id;
     }
 
     public Subject getSubject() {
@@ -50,12 +62,12 @@ public class Gradebook {
         this.student = student;
     }
 
-    public LocalDate getDate() {
-        return date;
+    public LocalDate getExam_date() {
+        return exam_date;
     }
 
-    public void setDate(LocalDate date) {
-        this.date = date;
+    public void setExam_date(LocalDate exam_date) {
+        this.exam_date = exam_date;
     }
 
     public Float getGrade() {

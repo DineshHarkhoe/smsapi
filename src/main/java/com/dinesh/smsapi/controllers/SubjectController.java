@@ -1,5 +1,6 @@
-package com.dinesh.smsapi.entities;
+package com.dinesh.smsapi.controllers;
 
+import com.dinesh.smsapi.entities.Subject;
 import com.dinesh.smsapi.repositories.SubjectRepository;
 import org.springframework.web.bind.annotation.*;
 

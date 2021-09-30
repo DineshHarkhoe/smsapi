@@ -114,13 +114,13 @@ if (devMode) {
   const parentThemePaths = findParentThemes(themeName, themeOptions);
   const currentThemeFolders = [...projectStaticAssetsFolders
       .map((folder) => path.resolve(folder, "themes", themeName)),
-    path.resolve(flowFrontendThemesFolder, themeName)];
+      path.resolve(flowFrontendThemesFolder, themeName)];
   // Watch the components folders for component styles update in both
   // current theme and parent themes. Other folders or CSS files except
   // 'styles.css' should be referenced from `styles.css` anyway, so no need
   // to watch them.
-  themeWatchFolders = [...currentThemeFolders, ...parentThemePaths]
-      .map((themeFolder) => path.resolve(themeFolder, "components"));
+    themeWatchFolders = [...currentThemeFolders, ...parentThemePaths]
+        .map((themeFolder) => path.resolve(themeFolder, "components"));
 }
 
 const processThemeResourcesCallback = (logger) => processThemeResources(themeOptions, logger);
@@ -136,7 +136,7 @@ module.exports = {
   context: frontendFolder,
   entry: {
     bundle: fileNameOfTheFlowGeneratedMainEntryPoint,
-    ...(devMode && {gizmo: devmodeGizmoJS})
+      ...(devMode && {gizmo: devmodeGizmoJS})
   },
 
   output: {
@@ -159,23 +159,23 @@ module.exports = {
   },
 
   devServer: {
-    // webpack-dev-server serves ./ ,  webpack-generated,  and java webapp
-    contentBase: [mavenOutputFolderForFlowBundledFiles, 'src/main/webapp'],
-    after: function (app, server) {
-      app.get(`/stats.json`, function (req, res) {
-        res.json(stats);
-      });
-      app.get(`/stats.hash`, function (req, res) {
-        res.json(stats.hash.toString());
-      });
-      app.get(`/assetsByChunkName`, function (req, res) {
-        res.json(stats.assetsByChunkName);
-      });
-      app.get(`/stop`, function (req, res) {
-        // eslint-disable-next-line no-console
-        console.log("Stopped 'webpack-dev-server'");
-        process.exit(0);
-      });
+      // webpack-dev-server serves ./ ,  webpack-generated,  and java webapp
+      contentBase: [mavenOutputFolderForFlowBundledFiles, 'src/main/webapp'],
+      after: function (app, server) {
+          app.get(`/stats.json`, function (req, res) {
+              res.json(stats);
+          });
+          app.get(`/stats.hash`, function (req, res) {
+              res.json(stats.hash.toString());
+          });
+          app.get(`/assetsByChunkName`, function (req, res) {
+              res.json(stats.assetsByChunkName);
+          });
+          app.get(`/stop`, function (req, res) {
+              // eslint-disable-next-line no-console
+              console.log("Stopped 'webpack-dev-server'");
+              process.exit(0);
+          });
     }
   },
 
@@ -197,9 +197,9 @@ module.exports = {
             options: {
               url: (url, resourcePath) => {
                 // Only translate files from node_modules
-                const resolve = resourcePath.match(/(\\|\/)node_modules\1/)
-                    && fs.existsSync(path.resolve(path.dirname(resourcePath), url));
-                const themeResource = resourcePath.match(themePartRegex) && url.match(/^themes\/[\s\S]*?\//);
+                  const resolve = resourcePath.match(/(\\|\/)node_modules\1/)
+                      && fs.existsSync(path.resolve(path.dirname(resourcePath), url));
+                  const themeResource = resourcePath.match(themePartRegex) && url.match(/^themes\/[\s\S]*?\//);
                 return resolve || themeResource;
               },
               // use theme-loader to also handle any imports in css files
@@ -295,13 +295,13 @@ module.exports = {
 
     // Generates the stats file for flow `@Id` binding.
     function (compiler) {
-      compiler.hooks.done.tapAsync('FlowIdPlugin', (compilation, done) => {
-        // trigger live reload via server
-        if (client) {
-          client.write('reload\n');
-        }
-        done();
-      });
+        compiler.hooks.done.tapAsync('FlowIdPlugin', (compilation, done) => {
+            // trigger live reload via server
+            if (client) {
+                client.write('reload\n');
+            }
+            done();
+        });
     },
 
     // Copy webcomponents polyfills. They are not bundled because they

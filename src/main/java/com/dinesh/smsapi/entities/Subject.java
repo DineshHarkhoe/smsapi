@@ -20,7 +20,7 @@ public class Subject {
     private Staff staff;
 
     @OneToMany(mappedBy = "subject")
-    private Set<Gradebook> gradebookSet;
+    private Set<Grade> gradeSet;
 
     public Subject() {
     }

@@ -8,26 +8,55 @@ public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long student_id;
+    private String student_name;
+    private String student_surname;
     private Integer cohort;
     private String adres;
     private Character geslacht;
 
     @ManyToOne
-    @JoinColumn(name = "person_id")
-    Person person;
-
-    @ManyToOne
-    @JoinColumn(name = "studie_orientatie_id")
+    @JoinColumn(name = "orientatie_id")
     Orientatie orientatie;
 
     @ManyToOne
     @JoinColumn(name = "study_id")
     Study study;
 
+    @ManyToOne
+    @JoinColumn(name = "status_id")
+    Status status;
+
     @OneToMany(mappedBy = "student")
-    private Set<Gradebook> gradebookSet;
+    private Set<Grade> gradeSet;
+
+    @OneToMany(mappedBy = "student")
+    private Set<Studcie> studcieSet;
 
     public Student() {
+    }
+
+    public String getStudent_name() {
+        return student_name;
+    }
+
+    public void setStudent_name(String student_name) {
+        this.student_name = student_name;
+    }
+
+    public String getStudent_surname() {
+        return student_surname;
+    }
+
+    public void setStudent_surname(String student_surname) {
+        this.student_surname = student_surname;
+    }
+
+    public Status getStatus() {
+        return status;
+    }
+
+    public void setStatus(Status status) {
+        this.status = status;
     }
 
     public Long getStudent_id() {
@@ -60,14 +89,6 @@ public class Student {
 
     public void setGeslacht(Character geslacht) {
         this.geslacht = geslacht;
-    }
-
-    public Person getPerson() {
-        return person;
-    }
-
-    public void setPerson(Person person) {
-        this.person = person;
     }
 
     public Orientatie getOrientatie() {

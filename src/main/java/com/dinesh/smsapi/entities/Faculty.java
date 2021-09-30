@@ -13,6 +13,9 @@ public class Faculty {
     @OneToMany(mappedBy = "faculty")
     Set<Study> studySet;
 
+    @OneToMany(mappedBy = "faculty_bestuur_id")
+    Set<Faculty_bestuur> faculty_bestuuurSet;
+
     public Faculty(String faculty_name) {
         this.faculty_name = faculty_name;
     }

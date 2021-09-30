@@ -8,14 +8,14 @@ public class Study {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long study_id;
-    private String study_name;
+    private String study;
 
     @ManyToOne
     @JoinColumn(name = "faculty_id")
     Faculty faculty;
 
     @OneToMany(mappedBy = "study")
-    private Set<Staff> staffSet;
+    private Set<Wetenschapper> wetenschapperSet;
 
     @OneToMany(mappedBy = "study")
     private Set<Orientatie> orientatieSet;
@@ -37,12 +37,12 @@ public class Study {
         this.study_id = study_id;
     }
 
-    public String getStudy_name() {
-        return study_name;
+    public String getStudy() {
+        return study;
     }
 
-    public void setStudy_name(String study_name) {
-        this.study_name = study_name;
+    public void setStudy(String study) {
+        this.study = study;
     }
 
     public Faculty getFaculty() {
@@ -51,15 +51,5 @@ public class Study {
 
     public void setFaculty(Faculty faculty) {
         this.faculty = faculty;
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        return super.equals(obj);
-    }
-
-    @Override
-    public String toString() {
-        return super.toString();
     }
 }

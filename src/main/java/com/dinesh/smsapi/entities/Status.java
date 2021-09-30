@@ -13,18 +13,16 @@ public class Status implements Serializable {
     private String status;
 
     @OneToMany(mappedBy = "status", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private Set<Person> personSet;
+    private Set<Administratie> administratieSet;
+
+    @OneToMany(mappedBy = "status")
+    private Set<Student> studentSet;
+
+    @OneToMany(mappedBy = "status")
+    private Set<Wetenschapper> wetenschapperSet;
 
     public Status() {
     }
-
-    /*public Set<Person> getPersonSet() {
-        return personSet;
-    }
-
-    public void setPersonSet(Set<Person> personSet) {
-        this.personSet = personSet;
-    }*/
 
     public Long getStatus_id() {
         return status_id;
@@ -40,20 +38,5 @@ public class Status implements Serializable {
 
     public void setStatus(String status) {
         this.status = status;
-    }
-
-    @Override
-    public int hashCode() {
-        return super.hashCode();
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        return super.equals(obj);
-    }
-
-    @Override
-    public String toString() {
-        return super.toString();
     }
 }
