@@ -1,58 +1,48 @@
 package com.dinesh.smsapi.entities;
 
 import javax.persistence.*;
-import java.util.Set;
 
 @Entity
 public class Administratie {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long wetenschapper_id;
-    private String wetenschapper_naam;
-    private String wetenschapper_surname;
+    private Long admin_id;
+    private String admin_name;
+    private String admin_surname;
 
     @ManyToOne
-    @JoinColumn(name = "study_id")
+    @JoinColumn(name = "study")
     private Study study;
 
     @ManyToOne
-    @JoinColumn(name = "status_id")
+    @JoinColumn(name = "status")
     private Status status;
-
-    @OneToMany(mappedBy = "wetenschapper")
-    private Set<Faculty_bestuur> faculty_bestuurSet;
-
-    @OneToMany(mappedBy = "wetenschapper")
-    private Set<Subject> subjectSet;
-
-    @OneToMany(mappedBy = "examinator")
-    private Set<Grade> gradeSet;
 
     public Administratie() {
     }
 
-    public Long getWetenschapper_id() {
-        return wetenschapper_id;
+    public Long getAdmin_id() {
+        return admin_id;
     }
 
-    public void setWetenschapper_id(Long wetenschapper_id) {
-        this.wetenschapper_id = wetenschapper_id;
+    public void setAdmin_id(Long admin_id) {
+        this.admin_id = admin_id;
     }
 
-    public String getWetenschapper_naam() {
-        return wetenschapper_naam;
+    public String getAdmin_name() {
+        return admin_name;
     }
 
-    public void setWetenschapper_naam(String wetenschapper_naam) {
-        this.wetenschapper_naam = wetenschapper_naam;
+    public void setAdmin_name(String admin_name) {
+        this.admin_name = admin_name;
     }
 
-    public String getWetenschapper_surname() {
-        return wetenschapper_surname;
+    public String getAdmin_surname() {
+        return admin_surname;
     }
 
-    public void setWetenschapper_surname(String wetenschapper_surname) {
-        this.wetenschapper_surname = wetenschapper_surname;
+    public void setAdmin_surname(String admin_surname) {
+        this.admin_surname = admin_surname;
     }
 
     public Study getStudy() {

@@ -15,12 +15,12 @@ public class GradeController {
         this.gradeRepository = gradeRepository;
     }
 
-    @GetMapping("/gradebook")
+    @GetMapping("/grade")
     List<Grade> all() {
         return gradeRepository.findAll();
     }
 
-    @GetMapping("/gradebook/{id}")
+    @GetMapping("/grade/{id}")
     Optional<Grade> all(@PathVariable Long id) {
         return gradeRepository.findById(id);
     }
@@ -30,13 +30,14 @@ public class GradeController {
         return gradeRepository.save(grade);
     }
 
-    @PutMapping("/gradebook/{id}")
+    @PutMapping("/grade/{id}")
     Optional<Grade> editGradebookName(@RequestBody Grade newGrade, @PathVariable Long id) {
         return gradeRepository.findById(id).map(grade -> {
             grade.setExam_date(newGrade.getExam_date());
             grade.setGrade(newGrade.getGrade());
             grade.setStudent(newGrade.getStudent());
             grade.setSubject(newGrade.getSubject());
+            grade.setExaminator(newGrade.getExaminator());
             return gradeRepository.save(grade);
         });
     }

@@ -9,11 +9,11 @@ public class Studcie {
     private Long studcie_id;
 
     @ManyToOne
-    @JoinColumn(name = "student_id")
+    @JoinColumn(name = "student")
     private Student student;
 
     @ManyToOne
-    @JoinColumn(name = "role_id")
+    @JoinColumn(name = "role")
     private Role role;
 
     public Studcie() {

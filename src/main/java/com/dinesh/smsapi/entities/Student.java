@@ -11,19 +11,18 @@ public class Student {
     private String student_name;
     private String student_surname;
     private Integer cohort;
-    private String adres;
-    private Character geslacht;
+    private String geslacht;
 
     @ManyToOne
-    @JoinColumn(name = "orientatie_id")
+    @JoinColumn(name = "orientatie")
     Orientatie orientatie;
 
     @ManyToOne
-    @JoinColumn(name = "study_id")
+    @JoinColumn(name = "study")
     Study study;
 
     @ManyToOne
-    @JoinColumn(name = "status_id")
+    @JoinColumn(name = "status")
     Status status;
 
     @OneToMany(mappedBy = "student")
@@ -67,19 +66,11 @@ public class Student {
         this.cohort = cohort;
     }
 
-    public String getAdres() {
-        return adres;
-    }
-
-    public void setAdres(String adres) {
-        this.adres = adres;
-    }
-
-    public Character getGeslacht() {
+    public String getGeslacht() {
         return geslacht;
     }
 
-    public void setGeslacht(Character geslacht) {
+    public void setGeslacht(String geslacht) {
         this.geslacht = geslacht;
     }
 

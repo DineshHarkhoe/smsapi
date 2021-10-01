@@ -2,7 +2,7 @@ package com.dinesh.smsapi.controllers;
 
 
 import com.dinesh.smsapi.entities.Student;
-import com.dinesh.smsapi.repositories.StudentRepository;
+import com.dinesh.smsapi.repositories.*;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -37,7 +37,6 @@ public class StudentController {
             student.setStudy(newStudent.getStudy());
             student.setOrientatie(newStudent.getOrientatie());
             student.setGeslacht(newStudent.getGeslacht());
-            student.setAdres(newStudent.getAdres());
             student.setCohort(newStudent.getCohort());
             student.setStatus(newStudent.getStatus());
             student.setStudent_name(newStudent.getStudent_name());

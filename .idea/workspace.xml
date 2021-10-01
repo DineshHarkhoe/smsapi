@@ -7,28 +7,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38f26d29-0c3c-4680-92a2-8fc7cf7d5041" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/smsapi_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/smsapi_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/controllers/OrientatieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/controllers/OrientatieController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smsapi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/smsapi.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/controllers/AdministratieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/controllers/AdministratieController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/controllers/FacultyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/controllers/FacultyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/controllers/GradeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/controllers/GradeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/controllers/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/controllers/RoleController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/controllers/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/controllers/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/controllers/StudyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/controllers/StudyController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/controllers/SubjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/controllers/SubjectController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/controllers/WetenschapperController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/controllers/WetenschapperController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/entities/Administratie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/entities/Administratie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/entities/Faculty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/entities/Faculty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/entities/Faculty_bestuur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/entities/Faculty_bestuur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/entities/Grade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/entities/Grade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/entities/Orientatie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/entities/Orientatie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/entities/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/entities/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/entities/Studcie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/entities/Studcie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/entities/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/entities/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/entities/Study.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/entities/Study.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/entities/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/entities/Subject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/forms/PersonForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/forms/PersonForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/entities/Wetenschapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/entities/Wetenschapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/forms/PersonForm.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/forms/StudentForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/forms/StudentForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/repositories/WetenschapperRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/repositories/WetenschapperRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/repositories/FacultyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/repositories/FacultyRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/views/HomeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/smsapi/views/HomeView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/controllers/FacultyController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/controllers/FacultyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/controllers/FacultyController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/controllers/GradebookController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/controllers/OrientatieController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/controllers/OrientatieController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/controllers/OrientatieController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/controllers/PersonController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/controllers/RoleController.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/controllers/StaffController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/controllers/StatusController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/controllers/StudentController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/controllers/StudyController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/controllers/StudentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/controllers/StudentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/controllers/StudyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/controllers/StudyController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/entities/Faculty.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/entities/Faculty.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/entities/Gradebook.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/entities/Orientatie.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/entities/Orientatie.class" afterDir="false" />
@@ -42,7 +53,7 @@
       <change beforePath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/repositories/GradebookRepository.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/repositories/PersonRepository.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/repositories/StaffRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dinesh/smsapi/repositories/SubjectRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.generated.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.generated.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +74,30 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="school@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="school@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="school@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="school: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="school@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="school: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="student: table" type="dbc44a63:MariaImplModel$Table" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -108,6 +142,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -123,6 +158,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
@@ -271,7 +307,7 @@
       <workItem from="1632707651616" duration="1012000" />
       <workItem from="1632775525422" duration="18839000" />
       <workItem from="1632882187896" duration="4092000" />
-      <workItem from="1633029759969" duration="6508000" />
+      <workItem from="1633029759969" duration="20153000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1632607092186</created>
@@ -308,7 +344,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633034678064</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="minor db corrections">
+      <created>1633036369883</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1633036369883</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -338,13 +381,15 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="initial" />
     <MESSAGE value="finished entities" />
     <MESSAGE value="runmanager changed" />
     <MESSAGE value="init view and form" />
     <MESSAGE value="updated db" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated db" />
+    <MESSAGE value="minor db corrections" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor db corrections" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -361,15 +406,16 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="185" y="71" key="#Project_Structure/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1632678689267" />
-    <state x="147" y="42" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1632679880506">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state x="1513" y="42" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1633059474970">
+      <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state x="147" y="42" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1632679880506" />
-    <state x="2134" y="78" width="374" height="625" key="#com.intellij.ide.util.MemberChooser" timestamp="1633036097892">
+    <state x="1513" y="42" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1633059474970" />
+    <state x="2134" y="78" width="374" height="625" key="#com.intellij.ide.util.MemberChooser" timestamp="1633089158768">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state x="496" y="88" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1632662082158" />
-    <state x="2134" y="78" width="374" height="625" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1633036097892" />
+    <state x="2134" y="78" width="374" height="625" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1633089158768" />
     <state x="496" y="88" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1632791305523" />
     <state x="992" y="88" key="#com.intellij.ide.util.MemberChooser/0.0.2732.768@0.0.2732.768" timestamp="1632778830262" />
     <state x="421" y="168" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1632789810635">
@@ -390,15 +436,19 @@
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state x="1794" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1633031767356" />
-    <state x="1787" y="134" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1633031157972">
+    <state x="1787" y="134" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1633039551827">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
-    <state x="1787" y="134" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1633031157972" />
-    <state x="1665" y="0" width="768" height="767" key="CommitChangelistDialog2" timestamp="1633034676435">
+    <state x="1787" y="134" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1633039551827" />
+    <state x="1802" y="233" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1633059306785">
+      <screen x="1366" y="0" width="1366" height="768" />
+    </state>
+    <state x="1802" y="233" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1633059306785" />
+    <state x="1665" y="0" width="768" height="767" key="CommitChangelistDialog2" timestamp="1633090256372">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state x="299" y="0" key="CommitChangelistDialog2/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1632662979421" />
-    <state x="1665" y="0" key="CommitChangelistDialog2/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1633034676435" />
+    <state x="1665" y="0" key="CommitChangelistDialog2/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1633090256372" />
     <state x="299" y="0" width="768" height="767" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1632781024960" />
     <state x="1466" y="100" width="1166" height="568" key="DiffContextDialog" timestamp="1632607552981">
       <screen x="1366" y="0" width="1366" height="768" />
@@ -413,60 +463,60 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="557" y="284" key="Github.ShareDialog/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1632663049250" />
-    <state width="1366" height="711" key="GridCell.Tab.0.bottom" timestamp="1632929971956">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state width="1366" height="711" key="GridCell.Tab.0.bottom" timestamp="1633089833683">
+      <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state width="935" height="711" key="GridCell.Tab.0.bottom/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1632680083577" />
-    <state width="1366" height="711" key="GridCell.Tab.0.bottom/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1632613324565" />
+    <state width="1366" height="711" key="GridCell.Tab.0.bottom/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1633089833683" />
     <state width="1366" height="711" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1632929971956" />
     <state width="1366" height="711" key="GridCell.Tab.0.bottom/0.0.2732.768@0.0.2732.768" timestamp="1632780282710" />
-    <state width="1366" height="711" key="GridCell.Tab.0.center" timestamp="1632929971955">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state width="1366" height="711" key="GridCell.Tab.0.center" timestamp="1633089833683">
+      <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state width="935" height="711" key="GridCell.Tab.0.center/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1632680083577" />
-    <state width="1366" height="711" key="GridCell.Tab.0.center/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1632613324565" />
+    <state width="1366" height="711" key="GridCell.Tab.0.center/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1633089833683" />
     <state width="1366" height="711" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1632929971955" />
     <state width="1366" height="711" key="GridCell.Tab.0.center/0.0.2732.768@0.0.2732.768" timestamp="1632780282709" />
-    <state width="1366" height="711" key="GridCell.Tab.0.left" timestamp="1632929971955">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state width="1366" height="711" key="GridCell.Tab.0.left" timestamp="1633089833682">
+      <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state width="935" height="711" key="GridCell.Tab.0.left/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1632680083577" />
-    <state width="1366" height="711" key="GridCell.Tab.0.left/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1632613324565" />
+    <state width="1366" height="711" key="GridCell.Tab.0.left/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1633089833682" />
     <state width="1366" height="711" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1632929971955" />
     <state width="1366" height="711" key="GridCell.Tab.0.left/0.0.2732.768@0.0.2732.768" timestamp="1632780282709" />
-    <state width="1366" height="711" key="GridCell.Tab.0.right" timestamp="1632929971955">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state width="1366" height="711" key="GridCell.Tab.0.right" timestamp="1633089833683">
+      <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state width="935" height="711" key="GridCell.Tab.0.right/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1632680083577" />
-    <state width="1366" height="711" key="GridCell.Tab.0.right/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1632613324565" />
+    <state width="1366" height="711" key="GridCell.Tab.0.right/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1633089833683" />
     <state width="1366" height="711" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1632929971955" />
     <state width="1366" height="711" key="GridCell.Tab.0.right/0.0.2732.768@0.0.2732.768" timestamp="1632780282709" />
-    <state width="1366" height="711" key="GridCell.Tab.1.bottom" timestamp="1632929971957">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state width="1366" height="711" key="GridCell.Tab.1.bottom" timestamp="1633089833683">
+      <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state width="935" height="711" key="GridCell.Tab.1.bottom/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1632680083578" />
-    <state width="1366" height="711" key="GridCell.Tab.1.bottom/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1632613324565" />
+    <state width="1366" height="711" key="GridCell.Tab.1.bottom/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1633089833683" />
     <state width="1366" height="711" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1632929971957" />
     <state width="1366" height="711" key="GridCell.Tab.1.bottom/0.0.2732.768@0.0.2732.768" timestamp="1632780282711" />
-    <state width="1366" height="711" key="GridCell.Tab.1.center" timestamp="1632929971957">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state width="1366" height="711" key="GridCell.Tab.1.center" timestamp="1633089833683">
+      <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state width="935" height="711" key="GridCell.Tab.1.center/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1632680083578" />
-    <state width="1366" height="711" key="GridCell.Tab.1.center/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1632613324565" />
+    <state width="1366" height="711" key="GridCell.Tab.1.center/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1633089833683" />
     <state width="1366" height="711" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1632929971957" />
     <state width="1366" height="711" key="GridCell.Tab.1.center/0.0.2732.768@0.0.2732.768" timestamp="1632780282710" />
-    <state width="1366" height="711" key="GridCell.Tab.1.left" timestamp="1632929971956">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state width="1366" height="711" key="GridCell.Tab.1.left" timestamp="1633089833683">
+      <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state width="935" height="711" key="GridCell.Tab.1.left/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1632680083578" />
-    <state width="1366" height="711" key="GridCell.Tab.1.left/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1632613324565" />
+    <state width="1366" height="711" key="GridCell.Tab.1.left/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1633089833683" />
     <state width="1366" height="711" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1632929971956" />
     <state width="1366" height="711" key="GridCell.Tab.1.left/0.0.2732.768@0.0.2732.768" timestamp="1632780282710" />
-    <state width="1366" height="711" key="GridCell.Tab.1.right" timestamp="1632929971957">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state width="1366" height="711" key="GridCell.Tab.1.right" timestamp="1633089833683">
+      <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state width="935" height="711" key="GridCell.Tab.1.right/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1632680083578" />
-    <state width="1366" height="711" key="GridCell.Tab.1.right/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1632613324565" />
+    <state width="1366" height="711" key="GridCell.Tab.1.right/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1633089833683" />
     <state width="1366" height="711" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1632929971957" />
     <state width="1366" height="711" key="GridCell.Tab.1.right/0.0.2732.768@0.0.2732.768" timestamp="1632780282711" />
     <state width="1320" height="230" key="GridCell.Tab.2.bottom" timestamp="1632872701852">
@@ -530,6 +580,10 @@
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state x="1859" y="304" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1632607531650" />
+    <state x="1562" y="0" width="766" height="768" key="find.popup" timestamp="1633086559511">
+      <screen x="1366" y="0" width="1366" height="768" />
+    </state>
+    <state x="1562" y="0" width="766" height="768" key="find.popup/0.0.1366.768/1366.0.1366.768@1366.0.1366.768" timestamp="1633086559511" />
     <state x="1850" y="178" key="git4idea.merge.GitMergeDialog" timestamp="1632607511713">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>

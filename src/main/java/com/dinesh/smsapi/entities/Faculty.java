@@ -8,17 +8,13 @@ public class Faculty {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long faculty_id;
-    private String faculty_name;
+    private String faculty;
 
     @OneToMany(mappedBy = "faculty")
     Set<Study> studySet;
 
-    @OneToMany(mappedBy = "faculty_bestuur_id")
+    @OneToMany(mappedBy = "faculty")
     Set<Faculty_bestuur> faculty_bestuuurSet;
-
-    public Faculty(String faculty_name) {
-        this.faculty_name = faculty_name;
-    }
 
     public Faculty() {
     }
@@ -31,29 +27,11 @@ public class Faculty {
         this.faculty_id = faculty_id;
     }
 
-    public String getFaculty_name() {
-        return faculty_name;
+    public String getFaculty() {
+        return faculty;
     }
 
-    public void setFaculty_name(String faculty_name) {
-        this.faculty_name = faculty_name;
-    }
-
-    @Override
-    public int hashCode() {
-        return super.hashCode();
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        return super.equals(obj);
-    }
-
-    @Override
-    public String toString() {
-        return super.toString();
+    public void setFaculty(String faculty) {
+        this.faculty = faculty;
     }
 }
-/*
- * TODO: override functions differ with tutorial
- */

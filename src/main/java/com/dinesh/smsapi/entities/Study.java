@@ -11,7 +11,7 @@ public class Study {
     private String study;
 
     @ManyToOne
-    @JoinColumn(name = "faculty_id")
+    @JoinColumn(name = "faculty")
     Faculty faculty;
 
     @OneToMany(mappedBy = "study")

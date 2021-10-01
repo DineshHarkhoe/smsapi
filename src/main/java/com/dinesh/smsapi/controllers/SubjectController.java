@@ -35,8 +35,9 @@ public class SubjectController {
         return subjectRepository.findById(id).map(subject -> {
             subject.setSemester(newSubject.getSemester());
             subject.setStudy(newSubject.getStudy());
-            subject.setSubject_name(newSubject.getSubject_name());
+            subject.setSubject(newSubject.getSubject());
             subject.setWetenschapper(newSubject.getWetenschapper());
+            subject.setStudiepunten(newSubject.getStudiepunten());
             return subjectRepository.save(subject);
         });
     }

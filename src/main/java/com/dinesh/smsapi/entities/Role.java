@@ -1,7 +1,6 @@
 package com.dinesh.smsapi.entities;
 
 import javax.persistence.*;
-import java.io.Serializable;
 import java.util.Set;
 
 @Entity
@@ -12,22 +11,14 @@ public class Role {
 
     private String role;
 
-    @OneToMany(mappedBy = "studcie")
+    @OneToMany(mappedBy = "role")
     private Set<Studcie> studcieSet;
 
-    @OneToMany(mappedBy = "faculty_bestuur")
+    @OneToMany(mappedBy = "role")
     private Set<Faculty_bestuur> faculty_bestuurSet;
 
     public Role() {
     }
-
-    /*public List<Person> getPersonSet() {
-        //return personSet;
-    }
-
-    public void setPersonSet(List<Person> personSet) {
-        this.personSet = personSet;
-    }*/
 
     public String getRole() {
         return role;
@@ -43,15 +34,5 @@ public class Role {
 
     public void setRole_id(Long role_id) {
         this.role_id = role_id;
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        return super.equals(obj);
-    }
-
-    @Override
-    public String toString() {
-        return super.toString();
     }
 }

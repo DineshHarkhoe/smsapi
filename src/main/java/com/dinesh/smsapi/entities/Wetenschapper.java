@@ -12,11 +12,11 @@ public class Wetenschapper {
     private String wetenschapper_surname;
 
     @ManyToOne
-    @JoinColumn(name = "status_id")
+    @JoinColumn(name = "status")
     private Status status;
 
     @ManyToOne
-    @JoinColumn(name = "study_id")
+    @JoinColumn(name = "study")
     private Study study;
 
     @OneToMany(mappedBy = "wetenschapper")

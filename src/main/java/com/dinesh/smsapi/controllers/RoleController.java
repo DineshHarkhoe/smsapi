@@ -17,7 +17,7 @@ public class RoleController {
 
     @GetMapping("/role")
     List<Role> all() {
-        return roleRepository.findAll();
+            return roleRepository.findAll();
     }
 
     @GetMapping("/role/{id}")

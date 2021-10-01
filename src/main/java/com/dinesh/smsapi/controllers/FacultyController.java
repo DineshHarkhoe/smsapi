@@ -33,7 +33,7 @@ public class FacultyController {
     @PutMapping("/faculty/{id}")
     Optional<Faculty> editFacultyName(@RequestBody Faculty newFaculty, @PathVariable Long id) {
         return facultyRepository.findById(id).map(faculty -> {
-            faculty.setFaculty_name(newFaculty.getFaculty_name());
+            faculty.setFaculty(newFaculty.getFaculty());
             return facultyRepository.save(faculty);
         });
     }

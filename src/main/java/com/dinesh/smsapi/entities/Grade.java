@@ -12,15 +12,15 @@ public class Grade {
     private Long grade_id;
 
     @ManyToOne
-    @JoinColumn(name = "subject_id")
+    @JoinColumn(name = "subject")
     private Subject subject;
 
     @ManyToOne
-    @JoinColumn(name = "student_id")
+    @JoinColumn(name = "student")
     private Student student;
 
     @ManyToOne
-    @JoinColumn(name = "wetenschapper_id")
+    @JoinColumn(name = "examinator")
     private Wetenschapper examinator;
 
     @JsonFormat(pattern = "yyyy-MM-dd")
@@ -78,13 +78,4 @@ public class Grade {
         this.grade = grade;
     }
 
-    @Override
-    public boolean equals(Object obj) {
-        return super.equals(obj);
-    }
-
-    @Override
-    public String toString() {
-        return super.toString();
-    }
 }

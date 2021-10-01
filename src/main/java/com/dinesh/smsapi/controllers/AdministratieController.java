@@ -36,8 +36,8 @@ public class AdministratieController {
         return administratieRepository.findById(id).map(administratie -> {
             administratie.setStatus(newAdministratie.getStatus());
             administratie.setStudy(newAdministratie.getStudy());
-            administratie.setWetenschapper_naam(newAdministratie.getWetenschapper_naam());
-            administratie.setWetenschapper_surname(newAdministratie.getWetenschapper_surname());
+            administratie.setAdmin_name(newAdministratie.getAdmin_name());
+            administratie.setAdmin_surname(newAdministratie.getAdmin_surname());
             return administratieRepository.save(administratie);
         });
     }

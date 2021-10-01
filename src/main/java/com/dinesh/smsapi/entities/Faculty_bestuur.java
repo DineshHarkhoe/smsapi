@@ -9,15 +9,15 @@ public class Faculty_bestuur {
     private Long faculty_bestuur_id;
 
     @ManyToOne
-    @JoinColumn(name = "wetenschapper_id")
+    @JoinColumn(name = "wetenschapper")
     private Wetenschapper wetenschapper;
 
     @ManyToOne
-    @JoinColumn(name = "faculty_id")
+    @JoinColumn(name = "faculty")
     private Faculty faculty;
 
     @ManyToOne
-    @JoinColumn(name = "role_id")
+    @JoinColumn(name = "role")
     private Role role;
 
     public Faculty_bestuur() {

@@ -11,7 +11,7 @@ public class Orientatie {
     private String orientatie;
 
     @ManyToOne
-    @JoinColumn(name = "study_id")
+    @JoinColumn(name = "study")
     Study study;
 
     @OneToMany(mappedBy = "orientatie")
