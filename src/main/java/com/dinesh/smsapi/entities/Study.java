@@ -26,6 +26,9 @@ public class Study {
     @OneToMany(mappedBy = "study")
     private Set<Student> studentSet;
 
+    /*@Formula("select count(c.study) from Student c where c.study = id")
+    private int totalStudents;*/
+
     public Study() {
     }
 
@@ -52,4 +55,8 @@ public class Study {
     public void setFaculty(Faculty faculty) {
         this.faculty = faculty;
     }
+
+    /*public int studentCount(){
+        return totalStudents;
+    }*/
 }

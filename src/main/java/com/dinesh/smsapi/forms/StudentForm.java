@@ -1,6 +1,7 @@
 package com.dinesh.smsapi.forms;
 
 import com.dinesh.smsapi.entities.Orientatie;
+import com.dinesh.smsapi.entities.Status;
 import com.dinesh.smsapi.entities.Student;
 import com.dinesh.smsapi.entities.Study;
 import com.vaadin.flow.component.ComponentEvent;
@@ -11,47 +12,58 @@ import com.vaadin.flow.component.button.ButtonVariant;
 import com.vaadin.flow.component.combobox.ComboBox;
 import com.vaadin.flow.component.formlayout.FormLayout;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
-import com.vaadin.flow.component.textfield.IntegerField;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.data.binder.Binder;
 import com.vaadin.flow.data.binder.ValidationException;
 import com.vaadin.flow.shared.Registration;
 
+import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 public class StudentForm extends FormLayout {
     Binder<Student> studentBinder = new Binder<>(Student.class);
-    private Student student;
-    TextField adres = new TextField("Adress");
-    IntegerField cohort = new IntegerField("Cohort");
-    ComboBox<Character> geslacht = new ComboBox<>("Geslacht");
+    Student student;
+    List<Integer> yearRange = new ArrayList<>();
+    TextField name = new TextField("Name");
+    TextField surname = new TextField("Surname");
+    ComboBox<Integer> cohort = new ComboBox<>("Cohort");
+    ComboBox<String> geslacht = new ComboBox<>("Geslacht");
     ComboBox<Orientatie> orientatieComboBox = new ComboBox<>("Orientatie");
     ComboBox<Study> studyComboBox = new ComboBox<>("Studie");
-    ComboBox<Person> personComboBox = new ComboBox<>("Person");
+    ComboBox<Status> statusComboBox = new ComboBox<>("Status");
     Button save = new Button("save");
     Button delete = new Button("delete");
     Button close = new Button("cancel");
 
-    public StudentForm(List<Orientatie> orientatieList, List<Study> studyList) {
+    public StudentForm(List<Orientatie> orientatieList, List<Study> studyList,
+                       List<Status> statusList) {
+        for (int p = LocalDateTime.now().getYear() - 20; p <= LocalDateTime.now().getYear(); p++) {
+            yearRange.add(p);
+        }
         orientatieComboBox.setItems(orientatieList);
-        orientatieComboBox.setItemLabelGenerator(Orientatie::getOrientatie_keuze);
+        orientatieComboBox.setItemLabelGenerator(Orientatie::getOrientatie);
         studyComboBox.setItems(studyList);
-        studyComboBox.setItemLabelGenerator(Study::getStudy_name);
-        geslacht.setItems('M', 'V');
+        studyComboBox.setItemLabelGenerator(Study::getStudy);
+        statusComboBox.setItems(statusList);
+        statusComboBox.setItemLabelGenerator(Status::getStatus);
+        geslacht.setItems("man", "vrouw", "nvt");
+        cohort.setItems(yearRange);
 
         configBinder();
 
-        add(personComboBox, geslacht, studyComboBox, cohort,
-                orientatieComboBox, adres, createButtonsLayout());
+        add(name, surname, geslacht, studyComboBox, cohort,
+                statusComboBox, orientatieComboBox, createButtonsLayout());
     }
 
     private void configBinder() {
-        studentBinder.bind(adres, Student::getAdres, Student::setAdres);
+        studentBinder.bind(name, Student::getStudent_name, Student::setStudent_name);
+        studentBinder.bind(surname, Student::getStudent_surname, Student::setStudent_surname);
         studentBinder.bind(cohort, Student::getCohort, Student::setCohort);
         studentBinder.bind(geslacht, Student::getGeslacht, Student::setGeslacht);
         studentBinder.bind(orientatieComboBox, Student::getOrientatie, Student::setOrientatie);
-        studentBinder.bind(personComboBox, Student::getPerson, Student::setPerson);
         studentBinder.bind(studyComboBox, Student::getStudy, Student::setStudy);
+        studentBinder.bind(statusComboBox, Student::getStatus, Student::setStatus);
     }
 
     public void setStudent(Student student) {
@@ -123,6 +135,4 @@ public class StudentForm extends FormLayout {
                                                                   ComponentEventListener<T> listener) {
         return getEventBus().addListener(eventType, listener);
     }
-
-
 }

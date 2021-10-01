@@ -1,0 +1,12 @@
+@media all and (max-width: 1100px) {
+    .home-view.editing .home-toolbar,
+    .home-view.editing .student-grid {
+        display: none;
+    }
+}
+
+a[highlight] {
+    font-weight: bold;
+    font-size: small;
+    text-decoration: underline;
+}

@@ -34,4 +34,6 @@ public class Faculty {
     public void setFaculty(String faculty) {
         this.faculty = faculty;
     }
+
+
 }
