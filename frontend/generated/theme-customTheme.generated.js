@@ -112,7 +112,6 @@ function getHash(input) {
     let h1 = hashFnv32a(input); // returns 32 bit (as 8 byte hex string)
     return h1 + hashFnv32a(h1 + input);
 }
-
 export const applyTheme = (target) => {
 
     injectGlobalCss(stylesCss.toString(), target);

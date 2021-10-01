@@ -108,7 +108,7 @@ const themeOptions = {
 let themeName = undefined;
 let themeWatchFolders = undefined;
 if (devMode) {
-  // Current theme name is being extracted from theme.js located in
+    // Current theme name is being extracted from theme.js located in
     // frontend/generated folder
     themeName = extractThemeName(frontendGeneratedFolder);
     const parentThemePaths = findParentThemes(themeName, themeOptions);

@@ -45,6 +45,10 @@ public class SmsService {
         return studentRepository.findAll();
     }
 
+    public List<Faculty> getAllFaculties() {
+        return facultyRepository.findAll();
+    }
+
     public List<Status> getAllStatus() {
         return statusRepository.findAll();
     }
@@ -59,5 +63,21 @@ public class SmsService {
 
     public List<Study> getAllStudy() {
         return studyRepository.findAll();
+    }
+
+    public void saveStudent(Student student) {
+        if (student == null) {
+            System.err.println("Student is null");
+            return;
+        }
+        studentRepository.save(student);
+    }
+
+    public void deleteStudent(Student student) {
+        studentRepository.delete(student);
+    }
+
+    public long countStudents() {
+        return studentRepository.count();
     }
 }
